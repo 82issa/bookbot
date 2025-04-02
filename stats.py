@@ -12,3 +12,6 @@ def count_characters(text):
             results[each] = 1
     return results
 
+def snorted(text):
+    results = sorted(text.items(), key=lambda x: x[1], reverse=True)
+    return results
